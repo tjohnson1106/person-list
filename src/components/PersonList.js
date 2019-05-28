@@ -1,5 +1,7 @@
 import React from "react";
 
+import Person from "./Person";
+
 const PersonList = () => {
   const people = [
     {
@@ -18,7 +20,15 @@ const PersonList = () => {
       job: "engineer"
     }
   ];
-  return <div>Person</div>;
+  return (
+    <section>
+      <Person person={people[0]} />
+      <Person person={people[1]} />
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vitae
+      quae repudiandae delectus.
+      <Person person={people[2]} />
+    </section>
+  );
 };
 
 export default PersonList;
